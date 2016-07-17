@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: dataset
+Version: 0.6.4
+Summary: Toolkit for Python-based data processing.
+Home-page: http://github.com/pudo/dataset
+Author: Friedrich Lindenberg, Gregor Aisch, Stefan Wehrmeyer
+Author-email: info@okfn.org
+License: MIT
+Description: UNKNOWN
+Keywords: sql sqlalchemy etl loading utility
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3

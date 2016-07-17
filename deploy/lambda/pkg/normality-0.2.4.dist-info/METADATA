@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: normality
+Version: 0.2.4
+Summary: Micro-library to normalize text strings
+Home-page: http://github.com/pudo/normality
+Author: Friedrich Lindenberg
+Author-email: friedrich@pudo.org
+License: MIT
+Keywords: text unicode normalization slugs
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Requires-Dist: six
+
+UNKNOWN
+
+

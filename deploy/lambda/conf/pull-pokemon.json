@@ -1,0 +1,5 @@
+{
+    "function_name": "pull-pokemon",
+    "handler": "main.pull_pokemon",
+    "description": "pull and loads information on captured pokemon"
+}

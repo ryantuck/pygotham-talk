@@ -1,0 +1,3 @@
+[console_scripts]
+datafreeze = dataset.freeze.app:main
+
