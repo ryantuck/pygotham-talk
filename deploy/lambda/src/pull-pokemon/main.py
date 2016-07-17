@@ -30,8 +30,18 @@ table = db['my_pokemon']
 # function that runs on invocation
 def pull_pokemon(event, context):
 
+    # parse dates or stick to defaults
+    today = datetime.datetime.utcnow().date()
+    yesterday = today - datetime.timedelta(days=1)
+    start_date = event.get('start', str(yesterday))
+    end_date = event.get('end', str(today))
+    payload = dict(
+            start=start_date,
+            end=end_date,
+        )
+
     # call an api that receives data about my pokemon
-    new_pokemon = requests.post(url, json.dumps(event)).json()
+    new_pokemon = requests.post(url, json.dumps(payload)).json()
 
     for pokemon in new_pokemon:
 
