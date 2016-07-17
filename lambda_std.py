@@ -16,9 +16,22 @@ rad_pokemon = [
 # function that runs on invocation
 def pull_pokemon(event, context):
 
+    # parse dates or stick to defaults
+    today = datetime.datetime.utcnow().date()
+    yesterday = today - datetime.timedelta(days=1)
+    start_date = event.get('start', str(yesterday))
+    end_date = event.get('end', str(today))
+
     # call an api that receives data about my pokemon
     url = 'https://api.databae.io/pokemon'
-    response = urllib2.urlopen(url, json.dumps(event))
+    response = urllib2.urlopen(
+        url, json.dumps(
+            dict(
+                start=start_date,
+                end=end_date
+            )
+        )
+    )
     new_pokemon = json.loads(response.read())
 
     for pokemon in new_pokemon:
