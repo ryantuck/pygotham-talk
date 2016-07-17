@@ -34,7 +34,8 @@ def deploy_lambda_function(session, function_name):
 
     # emoji = '\xF0\x9F\x92\xA9' # poo
     # emoji = '\xF0\x9F\x8D\xA5' # fish cake
-    emoji = '\xF0\x9F\x8D\xBA' # beer
+    # emoji = '\xF0\x9F\x8D\xBA' # beer
+    emoji = '\xF0\x9F\x8D\x95' # pizza
 
     print ''
 
